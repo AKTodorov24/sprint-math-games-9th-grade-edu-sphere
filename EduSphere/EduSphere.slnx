@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="EduSphere/EduSphere2.vcxproj" Id="f600f593-60f1-4676-86f4-a2c9ccf5bec5" />
+</Solution>
