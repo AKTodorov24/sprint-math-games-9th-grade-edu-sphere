@@ -1,0 +1,239 @@
+Question #1
+What is a string in programming?
+A) A number variable
+B) A sequence of characters used to store text
+C) A loop structure
+D) A mathematical operator
+Answer: B
+
+Question #2
+Which library must be included to use strings in C++?
+A) iostream
+B) vector
+C) string
+D) math
+Answer: C
+
+Question #3
+What does the function length() do?
+A) Prints the string
+B) Counts how many characters are in the string
+C) Deletes the string
+D) Combines two strings
+Answer: B
+
+Question #4
+What will word.length() return if word = "hello"?
+A) 4
+B) 5
+C) 6
+D) 10
+Answer: B
+
+Question #5
+What is the index of the first character in a string?
+A) 0
+B) 1
+C) -1
+D) 2
+Answer: A
+
+Question #6
+Which operator is used to combine two strings?
+A) -
+B) *
+C) +
+D) /
+Answer: C
+
+Question #7
+What will be the result of combining "Hello" and "World"?
+A) HelloWorld
+B) Hello World
+C) WorldHello
+D) Error
+Answer: B
+
+Question #8
+What does text[0] represent?
+A) The last character
+B) The first character
+C) The string length
+D) A random character
+Answer: B
+
+Question #9
+Which function reads a full line including spaces?
+A) cin
+B) getline()
+C) input()
+D) read()
+Answer: B
+
+Question #10
+What does cin >> text read?
+A) Only one word
+B) A full sentence
+C) Only numbers
+D) Nothing
+Answer: A
+
+Question #11
+Which symbol compares two strings?
+A) =
+B) ==
+C) !=
+D) +
+Answer: B
+
+Question #12
+What happens if two strings compared with == are identical?
+A) The program crashes
+B) The condition becomes true
+C) The string deletes
+D) Nothing happens
+Answer: B
+
+Question #13
+Which loop is commonly used to go through a string?
+A) for loop
+B) switch
+C) class
+D) struct
+Answer: A
+
+Question #14
+What does text[i] represent inside a loop?
+A) The entire string
+B) A single character from the string
+C) A number
+D) The string length
+Answer: B
+
+Question #15
+If text = "apple", how many characters does it contain?
+A) 3
+B) 4
+C) 5
+D) 6
+Answer: C
+
+Question #16
+What type of data is stored in a string?
+A) Only numbers
+B) Characters or text
+C) Only decimals
+D) Only symbols
+Answer: B
+
+Question #17
+What will text[1] return if text = "cat"?
+A) c
+B) a
+C) t
+D) error
+Answer: B
+
+Question #18
+What is the last index of a string with length 5?
+A) 5
+B) 4
+C) 3
+D) 2
+Answer: B
+
+Question #19
+Why are strings useful in programs?
+A) To store text data
+B) To store only numbers
+C) To control loops
+D) To delete files
+Answer: A
+
+Question #20
+What will a loop do when iterating through a string?
+A) Skip characters
+B) Process each character one by one
+C) Delete the string
+D) Stop the program
+Answer: B
+
+Question #21
+Which variable type should be used to store text?
+A) int
+B) double
+C) string
+D) bool
+Answer: C
+
+Question #22
+What does cout do with a string?
+A) Deletes it
+B) Prints it to the console
+C) Converts it to numbers
+D) Saves it to memory
+Answer: B
+
+Question #23
+Which example creates a string variable?
+A) int name = "Ivan";
+B) string name = "Ivan";
+C) char name = Ivan;
+D) bool name = "Ivan";
+Answer: B
+
+Question #24
+What happens if you access text[10] in a very short string?
+A) It prints normally
+B) It may cause an error or undefined behavior
+C) It deletes the string
+D) It returns 0
+Answer: B
+
+Question #25
+What is the purpose of a loop when working with strings?
+A) To repeat operations on characters
+B) To remove the string
+C) To convert numbers
+D) To end the program
+Answer: A
+
+Question #26
+If text = "banana", how many times does 'a' appear?
+A) 1
+B) 2
+C) 3
+D) 4
+Answer: C
+
+Question #27
+Which statement is true about strings?
+A) They store images
+B) They store text data
+C) They store only integers
+D) They store memory addresses
+Answer: B
+
+Question #28
+What does getline() store?
+A) Only numbers
+B) Only the first word
+C) A full line of text
+D) Only characters without spaces
+Answer: C
+
+Question #29
+Which operator is used with cout to display data?
+A) >>
+B) <<
+C) ==
+D) &&
+Answer: B
+
+Question #30
+Where are strings commonly used?
+A) Login systems and text input
+B) Only math calculations
+C) Only graphics
+D) Only hardware control
+Answer: A

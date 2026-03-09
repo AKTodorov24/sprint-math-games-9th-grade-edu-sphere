@@ -131,12 +131,19 @@
     <ClCompile Include="domain\users\auth.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="visuals\centering.cpp" />
+    <ClCompile Include="visuals\learningContent.cpp" />
+    <ClCompile Include="visuals\mainMenu.cpp" />
+    <ClCompile Include="visuals\practiceQuestions.cpp" />
     <ClCompile Include="visuals\title.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="config\libraries.h" />
     <ClInclude Include="domain\users\auth.h" />
+    <ClInclude Include="external\json.hpp" />
     <ClInclude Include="visuals\centering.h" />
+    <ClInclude Include="visuals\learningContent.h" />
+    <ClInclude Include="visuals\mainMenu.h" />
+    <ClInclude Include="visuals\practiceQuestions.h" />
     <ClInclude Include="visuals\title.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

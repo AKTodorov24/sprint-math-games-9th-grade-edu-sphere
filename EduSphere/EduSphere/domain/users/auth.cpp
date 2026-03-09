@@ -33,7 +33,7 @@ void saveAccounts(const json& j) {
     file.close();
 }
 
-bool registerUser(std::string& loggedUsername) {
+bool registerUser(std::string& loggedUsername, int& loggedUserID) {
     displayTitle();
     json accounts = loadAccounts();
     std::string username, password;
@@ -63,11 +63,12 @@ bool registerUser(std::string& loggedUsername) {
     accounts["users"].push_back(newUser);
     saveAccounts(accounts);
     loggedUsername = username;
+    loggedUserID = newID;
     std::cout << "\033[38;5;120m• Registration successful! Logged in as " << username << "\033[0m" << std::endl;
     return true;
 }
 
-bool loginUser(std::string& loggedUsername) {
+bool loginUser(std::string& loggedUsername, int& loggedUserID) {
     displayTitle();
     json accounts = loadAccounts();
     std::string username, password;
@@ -80,6 +81,7 @@ bool loginUser(std::string& loggedUsername) {
     for (auto& u : accounts["users"])
         if (u["username"] == username && u["password"] == hashed) {
             loggedUsername = username;
+            loggedUserID = u["id"].get<int>();
             std::cout << "\033[38;5;120m• Login successful! Welcome, " << username << "\033[0m" << std::endl;
             return true;
         }
@@ -89,7 +91,7 @@ bool loginUser(std::string& loggedUsername) {
     return false;
 }
 
-void authMenu(std::string& loggedUsername) {
+void authMenu(std::string& loggedUsername, int& loggedUserID) {
     bool logged = false;
     while (!logged) {
         std::cout << "\033[1m\033[38;5;208m┍━━━━━━━━━━━━━━━━━━━┑\033[0m" << std::endl;
@@ -104,8 +106,8 @@ void authMenu(std::string& loggedUsername) {
         system("cls");
 
         switch (choice) {
-        case 1: logged = registerUser(loggedUsername); break;
-        case 2: logged = loginUser(loggedUsername); break;
+        case 1: logged = registerUser(loggedUsername, loggedUserID); break;
+        case 2: logged = loginUser(loggedUsername, loggedUserID); break;
         case 0: exit(0);
         default: std::cout << "\033[31mInvalid choice!\033[0m" << std::endl;
         }

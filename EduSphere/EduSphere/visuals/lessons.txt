@@ -1,0 +1,77 @@
+Lesson 1: Introduction to Strings
+
+A string is a sequence of characters used to store text such as names, words, or sentences. In C++, the string type is part of the standard library and must be included with `#include <string>`. Strings allow programs to work with text instead of only numbers.
+
+Example:
+string name = "Ivan";
+
+This creates a variable called `name` that stores the text "Ivan". Strings are commonly used for user input, messages, and data processing in programs.
+
+Lesson 2: Basic String Operations
+
+Strings provide several useful operations. One of the most common is finding the length of the string. The function `.length()` returns the number of characters.
+
+Example:
+string word = "program";
+word.length() → 7
+
+Characters inside a string can be accessed using an index. Indexes start at 0, which means the first character has index 0.
+
+Example:
+string word = "hello";
+word[0] = h
+word[1] = e
+
+Strings can also be combined using the + operator.
+
+Example:
+string a = "Hello";
+string b = "World";
+string result = a + " " + b;
+
+Result: Hello World
+
+Lesson 3: Processing Strings with Loops
+
+Often programs need to process each character in a string. This can be done using a loop. A loop goes through the string one character at a time.
+
+Example:
+string text = "hello";
+
+for(int i = 0; i < text.length(); i++)
+cout << text[i];
+
+This prints every character in the string.
+
+Loops are useful for many string operations such as counting characters, searching for letters, and modifying text.
+
+Lesson 4: Reading Full Lines with Strings
+
+The input operator `cin >>` reads only one word and stops at the first space. When a program needs to read a full sentence, the function `getline()` should be used.
+
+Example:
+string text;
+getline(cin, text);
+
+If the user enters:
+Hello world
+
+The entire sentence will be stored in the variable `text`. This is useful for reading messages, descriptions, or longer text input.
+
+Lesson 5: Comparing Strings
+
+Strings can be compared to check if two texts are the same. This is done using the `==` operator.
+
+Example:
+string password = "admin";
+string input;
+
+cin >> input;
+
+if(input == password)
+cout << "Access granted";
+else
+cout << "Access denied";
+
+String comparison is commonly used in login systems, commands, and menu selections.
+
