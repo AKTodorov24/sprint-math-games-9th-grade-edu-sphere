@@ -21,12 +21,24 @@
     <ClCompile Include="visuals\title.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="domain\users\auth.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="visuals\centering.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="config\libraries.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="visuals\title.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="domain\users\auth.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="visuals\centering.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

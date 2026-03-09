@@ -128,11 +128,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="domain\users\auth.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="visuals\centering.cpp" />
     <ClCompile Include="visuals\title.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="config\libraries.h" />
+    <ClInclude Include="domain\users\auth.h" />
+    <ClInclude Include="visuals\centering.h" />
     <ClInclude Include="visuals\title.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
