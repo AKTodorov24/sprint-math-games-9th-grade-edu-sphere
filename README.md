@@ -23,8 +23,8 @@
 <br>
       
 # 📄 Documentation
-<h3> ➤ <a href="https://github.com/codingburgas/CHANGE">Documentation</a><img src="https://cdn.worldvectorlogo.com/logos/word-1.svg" alt="Word" width="30" height="20"/> </h3>
-<h3> ➤ <a href="https://github.com/codingburgas/CHANGE">Presentation </a><img src="https://cdn.worldvectorlogo.com/logos/powerpoint-2.svg" alt="PowerPoint" width="30" height="20"/> </h3>
+<h3> ➤ <a href="https://github.com/AKTodorov24/sprint-math-games-9th-grade-edu-sphere/blob/main/Documentation/Documentation.docx">Documentation</a><img src="https://cdn.worldvectorlogo.com/logos/word-1.svg" alt="Word" width="30" height="20"/> </h3>
+<h3> ➤ <a href="https://github.com/AKTodorov24/sprint-math-games-9th-grade-edu-sphere/blob/main/Documentation/Presentation.pptx">Presentation </a><img src="https://cdn.worldvectorlogo.com/logos/powerpoint-2.svg" alt="PowerPoint" width="30" height="20"/> </h3>
 <br>
 
 # 🏆 Our Team
@@ -47,7 +47,7 @@
 **Open CMD and clone our repo by typing:**
 
 ```
-git clone https://github.com/codingburgas/sprint-math-games-9th-grade-cypher-peak
+git clone https://github.com/AKTodorov24/sprint-math-games-9th-grade-edu-sphere
 ```
  
 <p align="center">
