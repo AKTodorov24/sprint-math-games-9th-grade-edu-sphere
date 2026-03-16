@@ -1,0 +1,577 @@
+{
+    "results": [
+        {
+            "answers": [
+                {
+                    "correct": false,
+                    "difficulty": 2,
+                    "questionID": 22,
+                    "topic": "Processing Strings with Loops"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 2,
+                    "questionID": 33,
+                    "topic": "Reading Full Lines with Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 1,
+                    "questionID": 29,
+                    "topic": "Reading Full Lines with Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 1,
+                    "questionID": 1,
+                    "topic": "Introduction to Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 3,
+                    "questionID": 9,
+                    "topic": "Introduction to Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 2,
+                    "questionID": 5,
+                    "topic": "Introduction to Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 1,
+                    "questionID": 38,
+                    "topic": "Comparing Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 3,
+                    "questionID": 7,
+                    "topic": "Introduction to Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 3,
+                    "questionID": 34,
+                    "topic": "Reading Full Lines with Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 2,
+                    "questionID": 40,
+                    "topic": "Comparing Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 3,
+                    "questionID": 8,
+                    "topic": "Introduction to Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 3,
+                    "questionID": 43,
+                    "topic": "Comparing Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 2,
+                    "questionID": 6,
+                    "topic": "Introduction to Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 1,
+                    "questionID": 19,
+                    "topic": "Processing Strings with Loops"
+                },
+                {
+                    "correct": true,
+                    "difficulty": 3,
+                    "questionID": 44,
+                    "topic": "Comparing Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 2,
+                    "questionID": 13,
+                    "topic": "Basic String Operations"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 2,
+                    "questionID": 15,
+                    "topic": "Basic String Operations"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 3,
+                    "questionID": 36,
+                    "topic": "Reading Full Lines with Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 2,
+                    "questionID": 14,
+                    "topic": "Basic String Operations"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 2,
+                    "questionID": 32,
+                    "topic": "Reading Full Lines with Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 1,
+                    "questionID": 20,
+                    "topic": "Processing Strings with Loops"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 2,
+                    "questionID": 42,
+                    "topic": "Comparing Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 1,
+                    "questionID": 37,
+                    "topic": "Comparing Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 3,
+                    "questionID": 17,
+                    "topic": "Basic String Operations"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 3,
+                    "questionID": 27,
+                    "topic": "Processing Strings with Loops"
+                },
+                {
+                    "correct": true,
+                    "difficulty": 2,
+                    "questionID": 23,
+                    "topic": "Processing Strings with Loops"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 3,
+                    "questionID": 26,
+                    "topic": "Processing Strings with Loops"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 3,
+                    "questionID": 35,
+                    "topic": "Reading Full Lines with Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 2,
+                    "questionID": 4,
+                    "topic": "Introduction to Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 2,
+                    "questionID": 31,
+                    "topic": "Reading Full Lines with Strings"
+                }
+            ],
+            "date": "2026-03-16 19:27",
+            "earned": 5,
+            "grade": 2,
+            "maxPossible": 65,
+            "scorePercent": 7.6923076923076925,
+            "userID": 14,
+            "username": "asd"
+        },
+        {
+            "answers": [
+                {
+                    "correct": false,
+                    "difficulty": 1,
+                    "questionID": 20,
+                    "topic": "Processing Strings with Loops"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 2,
+                    "questionID": 42,
+                    "topic": "Comparing Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 1,
+                    "questionID": 37,
+                    "topic": "Comparing Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 1,
+                    "questionID": 10,
+                    "topic": "Basic String Operations"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 3,
+                    "questionID": 7,
+                    "topic": "Introduction to Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 3,
+                    "questionID": 35,
+                    "topic": "Reading Full Lines with Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 3,
+                    "questionID": 8,
+                    "topic": "Introduction to Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 2,
+                    "questionID": 31,
+                    "topic": "Reading Full Lines with Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 2,
+                    "questionID": 15,
+                    "topic": "Basic String Operations"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 1,
+                    "questionID": 11,
+                    "topic": "Basic String Operations"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 2,
+                    "questionID": 5,
+                    "topic": "Introduction to Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 3,
+                    "questionID": 34,
+                    "topic": "Reading Full Lines with Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 3,
+                    "questionID": 9,
+                    "topic": "Introduction to Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 1,
+                    "questionID": 12,
+                    "topic": "Basic String Operations"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 2,
+                    "questionID": 40,
+                    "topic": "Comparing Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 2,
+                    "questionID": 13,
+                    "topic": "Basic String Operations"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 2,
+                    "questionID": 14,
+                    "topic": "Basic String Operations"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 1,
+                    "questionID": 21,
+                    "topic": "Processing Strings with Loops"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 3,
+                    "questionID": 36,
+                    "topic": "Reading Full Lines with Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 2,
+                    "questionID": 33,
+                    "topic": "Reading Full Lines with Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 3,
+                    "questionID": 16,
+                    "topic": "Basic String Operations"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 3,
+                    "questionID": 43,
+                    "topic": "Comparing Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 3,
+                    "questionID": 25,
+                    "topic": "Processing Strings with Loops"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 1,
+                    "questionID": 1,
+                    "topic": "Introduction to Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 2,
+                    "questionID": 32,
+                    "topic": "Reading Full Lines with Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 1,
+                    "questionID": 38,
+                    "topic": "Comparing Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 1,
+                    "questionID": 2,
+                    "topic": "Introduction to Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 3,
+                    "questionID": 45,
+                    "topic": "Comparing Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 3,
+                    "questionID": 27,
+                    "topic": "Processing Strings with Loops"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 1,
+                    "questionID": 19,
+                    "topic": "Processing Strings with Loops"
+                }
+            ],
+            "date": "2026-03-16 19:28",
+            "earned": 0,
+            "grade": 2,
+            "maxPossible": 61,
+            "scorePercent": 0.0,
+            "userID": 14,
+            "username": "asd"
+        },
+        {
+            "answers": [
+                {
+                    "correct": false,
+                    "difficulty": 3,
+                    "questionID": 43,
+                    "topic": "Comparing Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 2,
+                    "questionID": 6,
+                    "topic": "Introduction to Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 2,
+                    "questionID": 41,
+                    "topic": "Comparing Strings"
+                },
+                {
+                    "correct": true,
+                    "difficulty": 2,
+                    "questionID": 23,
+                    "topic": "Processing Strings with Loops"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 3,
+                    "questionID": 26,
+                    "topic": "Processing Strings with Loops"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 1,
+                    "questionID": 2,
+                    "topic": "Introduction to Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 1,
+                    "questionID": 19,
+                    "topic": "Processing Strings with Loops"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 1,
+                    "questionID": 29,
+                    "topic": "Reading Full Lines with Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 2,
+                    "questionID": 5,
+                    "topic": "Introduction to Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 3,
+                    "questionID": 16,
+                    "topic": "Basic String Operations"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 3,
+                    "questionID": 9,
+                    "topic": "Introduction to Strings"
+                },
+                {
+                    "correct": true,
+                    "difficulty": 3,
+                    "questionID": 44,
+                    "topic": "Comparing Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 1,
+                    "questionID": 20,
+                    "topic": "Processing Strings with Loops"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 1,
+                    "questionID": 37,
+                    "topic": "Comparing Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 2,
+                    "questionID": 14,
+                    "topic": "Basic String Operations"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 3,
+                    "questionID": 35,
+                    "topic": "Reading Full Lines with Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 2,
+                    "questionID": 24,
+                    "topic": "Processing Strings with Loops"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 3,
+                    "questionID": 18,
+                    "topic": "Basic String Operations"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 2,
+                    "questionID": 13,
+                    "topic": "Basic String Operations"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 3,
+                    "questionID": 45,
+                    "topic": "Comparing Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 1,
+                    "questionID": 11,
+                    "topic": "Basic String Operations"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 3,
+                    "questionID": 27,
+                    "topic": "Processing Strings with Loops"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 3,
+                    "questionID": 7,
+                    "topic": "Introduction to Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 2,
+                    "questionID": 31,
+                    "topic": "Reading Full Lines with Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 1,
+                    "questionID": 3,
+                    "topic": "Introduction to Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 3,
+                    "questionID": 25,
+                    "topic": "Processing Strings with Loops"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 3,
+                    "questionID": 17,
+                    "topic": "Basic String Operations"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 2,
+                    "questionID": 42,
+                    "topic": "Comparing Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 3,
+                    "questionID": 34,
+                    "topic": "Reading Full Lines with Strings"
+                },
+                {
+                    "correct": false,
+                    "difficulty": 2,
+                    "questionID": 40,
+                    "topic": "Comparing Strings"
+                }
+            ],
+            "date": "2026-03-16 19:32",
+            "earned": 5,
+            "grade": 2,
+            "maxPossible": 66,
+            "scorePercent": 7.575757575757576,
+            "userID": 14,
+            "username": "asd"
+        }
+    ]
+}

@@ -40,6 +40,30 @@ static std::vector<Lesson> loadLessons() {
     return lessons;
 }
 
+static void printWrapped(const std::string& text, int maxWidth) {
+    std::istringstream stream(text);
+    std::string line;
+    while (std::getline(stream, line)) {
+        if (line.empty()) {
+            std::cout << "\n";
+            continue;
+        }
+        std::istringstream words(line);
+        std::string word, current;
+        while (words >> word) {
+            if (!current.empty() && (int)(current.size() + 1 + word.size()) > maxWidth) {
+                std::cout << "\033[38;5;223m" << current << "\033[0m\n";
+                current = word;
+            } else {
+                if (!current.empty()) current += ' ';
+                current += word;
+            }
+        }
+        if (!current.empty())
+            std::cout << "\033[38;5;223m" << current << "\033[0m\n";
+    }
+}
+
 static void displayLesson(const Lesson& lesson) {
     while (true) {
         system("cls");
@@ -48,7 +72,8 @@ static void displayLesson(const Lesson& lesson) {
         std::cout << "\033[1m\033[38;5;208m│     LEARNING CONTENT    │\033[0m" << std::endl;
         std::cout << "\033[1m\033[38;5;208m┕━━━━━━━━━━━━━━━━━━━━━━━━━┙\033[0m" << std::endl;
         std::cout << "\033[1m\033[38;5;120m" << lesson.title << "\033[0m\n" << std::endl;
-        std::cout << "\033[38;5;223m" << lesson.content << "\033[0m\n" << std::endl;
+        printWrapped(lesson.content, 70);
+        std::cout << "\n";
         std::cout << "\033[38;5;223m0. Back\033[0m" << std::endl;
         std::cout << "\033[38;5;208m• Choice: \033[0m";
 

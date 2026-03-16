@@ -1,0 +1,449 @@
+TestQuestion #1
+Topic: Introduction to Strings
+Difficulty: 1
+Which header must be included to use the string type in C++?
+A) <cmath>
+B) <string>
+C) <vector>
+D) <iostream>
+Answer: B
+
+TestQuestion #2
+Topic: Introduction to Strings
+Difficulty: 1
+In C++, a string literal is enclosed in:
+A) Single quotes
+B) Backticks
+C) Double quotes
+D) Parentheses
+Answer: C
+
+TestQuestion #3
+Topic: Introduction to Strings
+Difficulty: 1
+Which C++ type is used to store text?
+A) int
+B) float
+C) string
+D) bool
+Answer: C
+
+TestQuestion #4
+Topic: Introduction to Strings
+Difficulty: 2
+What does  string s;  declare?
+A) An uninitialized integer
+B) An empty string variable
+C) A null pointer
+D) A character array
+Answer: B
+
+TestQuestion #5
+Topic: Introduction to Strings
+Difficulty: 2
+Which line correctly stores the text "C++"?
+A) string s = 'C++';
+B) string s = "C++";
+C) char s = "C++";
+D) text s = "C++";
+Answer: B
+
+TestQuestion #6
+Topic: Introduction to Strings
+Difficulty: 2
+Which statement about strings in C++ is TRUE?
+A) They can only hold lowercase letters
+B) They are a primitive type in C++
+C) They must have a fixed length at compile time
+D) They can hold any sequence of characters
+Answer: D
+
+TestQuestion #7
+Topic: Introduction to Strings
+Difficulty: 3
+What is the output of:  string s = "abc"; s = s + "def"; cout << s.length();
+A) 3
+B) 6
+C) 7
+D) Compile error
+Answer: B
+
+TestQuestion #8
+Topic: Introduction to Strings
+Difficulty: 3
+Which is NOT a valid way to initialize a string in C++?
+A) string s = "hello";
+B) string s("hello");
+C) string s = 'h';
+D) string s = string("hello");
+Answer: C
+
+TestQuestion #9
+Topic: Introduction to Strings
+Difficulty: 3
+What does  string s = "Hello\nWorld";  actually store?
+A) The literal text "Hello\nWorld" with backslash
+B) Two separate strings
+C) "Hello" followed by a newline then "World"
+D) Compile error — strings cannot contain backslash
+Answer: C
+
+TestQuestion #10
+Topic: Basic String Operations
+Difficulty: 1
+What does  .size()  return for a string?
+A) The maximum capacity
+B) The number of characters
+C) Clears the string
+D) Returns the first character
+Answer: B
+
+TestQuestion #11
+Topic: Basic String Operations
+Difficulty: 1
+What is the index of the last character in  string s = "Hello"  (length 5)?
+A) 5
+B) 4
+C) 6
+D) 0
+Answer: B
+
+TestQuestion #12
+Topic: Basic String Operations
+Difficulty: 1
+Which operator joins two strings together?
+A) -
+B) *
+C) +
+D) /
+Answer: C
+
+TestQuestion #13
+Topic: Basic String Operations
+Difficulty: 2
+What is the output of:  string s = "cat"; cout << s[2];
+A) c
+B) a
+C) t
+D) Compile error
+Answer: C
+
+TestQuestion #14
+Topic: Basic String Operations
+Difficulty: 2
+What does  s.empty()  return if s is an empty string?
+A) false
+B) 0
+C) true
+D) -1
+Answer: C
+
+TestQuestion #15
+Topic: Basic String Operations
+Difficulty: 2
+What does  s.substr(1, 3)  return for  s = "Hello" ?
+A) "Hel"
+B) "ell"
+C) "ello"
+D) "lo"
+Answer: B
+
+TestQuestion #16
+Topic: Basic String Operations
+Difficulty: 3
+What is the output of:  string s = "hello"; s[0] = 'H'; cout << s;
+A) hello
+B) Hello
+C) H
+D) Compile error
+Answer: B
+
+TestQuestion #17
+Topic: Basic String Operations
+Difficulty: 3
+string a = "foo"; string b = a; a += "bar"; cout << b; — what prints?
+A) foobar
+B) foo
+C) bar
+D) foobar foo
+Answer: B
+
+TestQuestion #18
+Topic: Basic String Operations
+Difficulty: 3
+What is the output of:  string s = "abcde"; cout << s.substr(2);
+A) ab
+B) cde
+C) cd
+D) abcde
+Answer: B
+
+TestQuestion #19
+Topic: Processing Strings with Loops
+Difficulty: 1
+Which loop type is most commonly used to go through each character in a string?
+A) do-while
+B) while
+C) for
+D) switch
+Answer: C
+
+TestQuestion #20
+Topic: Processing Strings with Loops
+Difficulty: 1
+Inside a loop,  text[i]  gives:
+A) The string length
+B) The character at index i
+C) The index itself
+D) A copy of the string
+Answer: B
+
+TestQuestion #21
+Topic: Processing Strings with Loops
+Difficulty: 1
+For  string s = "Hello" ,  s.length()  equals:
+A) 4
+B) 6
+C) 5
+D) 0
+Answer: C
+
+TestQuestion #22
+Topic: Processing Strings with Loops
+Difficulty: 2
+What does this count?  int n=0; for(int i=0; i<s.length(); i++) if(s[i]==' ') n++;
+A) Letters
+B) Digits
+C) Spaces
+D) Words
+Answer: C
+
+TestQuestion #23
+Topic: Processing Strings with Loops
+Difficulty: 2
+Which loop prints every other character of s starting from index 0?
+A) for(int i=0; i<s.length(); i+=2) cout<<s[i];
+B) for(int i=1; i<s.length(); i++) cout<<s[i];
+C) for(int i=0; i<s.length(); i--) cout<<s[i];
+D) for(int i=0; i<=s.length(); i+=2) cout<<s[i];
+Answer: A
+
+TestQuestion #24
+Topic: Processing Strings with Loops
+Difficulty: 2
+string s="aabb"; int c=0; for(char ch:s) if(ch=='a') c++; cout<<c; — output?
+A) 1
+B) 4
+C) 2
+D) 0
+Answer: C
+
+TestQuestion #25
+Topic: Processing Strings with Loops
+Difficulty: 3
+What does this print for s="Hello"?  for(int i=0;i<s.length();i++) cout<<char(toupper(s[i]));
+A) hello
+B) HELLO
+C) Hello
+D) Compile error
+Answer: B
+
+TestQuestion #26
+Topic: Processing Strings with Loops
+Difficulty: 3
+To count digit characters in a string, which condition inside a loop is correct?
+A) if(s[i] >= 'a')
+B) if(s[i] >= '0' && s[i] <= '9')
+C) if(s[i] == ' ')
+D) if(isalpha(s[i]))
+Answer: B
+
+TestQuestion #27
+Topic: Processing Strings with Loops
+Difficulty: 3
+string s="abcba"; bool p=true; for(int i=0;i<s.length()/2;i++) if(s[i]!=s[s.length()-1-i]) p=false; cout<<p;
+A) 0
+B) true
+C) 1
+D) Compile error
+Answer: C
+
+TestQuestion #28
+Topic: Reading Full Lines with Strings
+Difficulty: 1
+cin >> s  stops reading when it encounters:
+A) End of file
+B) Any whitespace character
+C) A digit
+D) A semicolon
+Answer: B
+
+TestQuestion #29
+Topic: Reading Full Lines with Strings
+Difficulty: 1
+To read the full string "Hello World" into one variable, you use:
+A) cin >> s
+B) getline(cin, s)
+C) scanf("%s", &s)
+D) cin.read(s)
+Answer: B
+
+TestQuestion #30
+Topic: Reading Full Lines with Strings
+Difficulty: 1
+getline(cin, s)  reads until:
+A) The first space
+B) End of file only
+C) A newline character
+D) A comma
+Answer: C
+
+TestQuestion #31
+Topic: Reading Full Lines with Strings
+Difficulty: 2
+What is the problem with  cin >> s  for the input "New York"?
+A) It crashes the program
+B) Only "New" is stored; "York" is discarded
+C) It stores both words correctly
+D) It requires a larger buffer
+Answer: B
+
+TestQuestion #32
+Topic: Reading Full Lines with Strings
+Difficulty: 2
+After  cin >> n  (reading an int), what must you do before using getline(cin, s)?
+A) Nothing special
+B) Call cin.clear()
+C) Call cin.ignore() to discard the leftover newline
+D) Reinitialize s to ""
+Answer: C
+
+TestQuestion #33
+Topic: Reading Full Lines with Strings
+Difficulty: 2
+User enters "  hello  " (with surrounding spaces). After getline(cin, s), what is stored in s?
+A) "hello"
+B) "  hello"
+C) "  hello  "
+D) ""
+Answer: C
+
+TestQuestion #34
+Topic: Reading Full Lines with Strings
+Difficulty: 3
+Which correctly reads 3 full lines (possibly with spaces) into an array of strings?
+A) for(int i=0;i<3;i++) cin>>lines[i];
+B) for(int i=0;i<3;i++) getline(cin,lines[i]);
+C) cin>>lines[0]>>lines[1]>>lines[2];
+D) scanf("%s%s%s", lines)
+Answer: B
+
+TestQuestion #35
+Topic: Reading Full Lines with Strings
+Difficulty: 3
+What does  cin.ignore(1000, '\n')  do?
+A) Reads and stores up to 1000 characters
+B) Skips input characters until a newline or 1000 characters, whichever comes first
+C) Permanently disables further cin input
+D) Sets the internal buffer limit to 1000
+Answer: B
+
+TestQuestion #36
+Topic: Reading Full Lines with Strings
+Difficulty: 3
+Program runs:  int x; cin>>x;  then  getline(cin,s). User typed "5" then Enter then "Hello". What is stored in s?
+A) "Hello"
+B) ""
+C) "5"
+D) "5 Hello"
+Answer: B
+
+TestQuestion #37
+Topic: Comparing Strings
+Difficulty: 1
+Which operator checks if two strings have identical content?
+A) =
+B) ==
+C) !=
+D) .compare()
+Answer: B
+
+TestQuestion #38
+Topic: Comparing Strings
+Difficulty: 1
+"abc" == "abc"  evaluates to:
+A) false
+B) 1
+C) true
+D) Compile error
+Answer: C
+
+TestQuestion #39
+Topic: Comparing Strings
+Difficulty: 1
+String comparison with == in C++ is by default:
+A) Case-insensitive
+B) Based only on string length
+C) Only valid for single characters
+D) Case-sensitive
+Answer: D
+
+TestQuestion #40
+Topic: Comparing Strings
+Difficulty: 2
+What does  "apple" < "banana"  evaluate to in C++?
+A) false
+B) 0
+C) true
+D) Compile error
+Answer: C
+
+TestQuestion #41
+Topic: Comparing Strings
+Difficulty: 2
+What is the result of  "Hello" == "hello" ?
+A) true
+B) Depends on the platform
+C) false
+D) Compile error
+Answer: C
+
+TestQuestion #42
+Topic: Comparing Strings
+Difficulty: 2
+s.compare("test")  returns what value when  s == "test" ?
+A) 1
+B) -1
+C) 0
+D) true
+Answer: C
+
+TestQuestion #43
+Topic: Comparing Strings
+Difficulty: 3
+To sort a vector of strings alphabetically with std::sort, which comparison does it rely on?
+A) s1 > s2
+B) s1 == s2
+C) s1 < s2
+D) s1 != s2
+Answer: C
+
+TestQuestion #44
+Topic: Comparing Strings
+Difficulty: 3
+string a="Z"; string b="a"; cout << (a < b); — what is printed?
+A) 1
+B) 0
+C) true
+D) Compile error
+Answer: A
+
+TestQuestion #45
+Topic: Comparing Strings
+Difficulty: 3
+Which approach correctly determines if a string contains ONLY lowercase letters?
+A) if(input == tolower(input))
+B) if(input >= "a" && input <= "z")
+C) Loop through each char: flag as false if any char is outside 'a'-'z'
+D) if(islower(input))
+Answer: C

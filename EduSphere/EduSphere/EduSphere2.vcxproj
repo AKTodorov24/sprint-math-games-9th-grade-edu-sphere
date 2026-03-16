@@ -133,6 +133,11 @@
     <ClCompile Include="visuals\centering.cpp" />
     <ClCompile Include="visuals\learningContent.cpp" />
     <ClCompile Include="visuals\mainMenu.cpp" />
+    <ClCompile Include="domain\results\resultsStore.cpp" />
+    <ClCompile Include="visuals\generateTest.cpp" />
+    <ClCompile Include="visuals\homework.cpp" />
+    <ClCompile Include="visuals\myTestResults.cpp" />
+    <ClCompile Include="visuals\studentStatistics.cpp" />
     <ClCompile Include="visuals\practiceQuestions.cpp" />
     <ClCompile Include="visuals\title.cpp" />
   </ItemGroup>
@@ -143,6 +148,11 @@
     <ClInclude Include="visuals\centering.h" />
     <ClInclude Include="visuals\learningContent.h" />
     <ClInclude Include="visuals\mainMenu.h" />
+    <ClInclude Include="domain\results\resultsStore.h" />
+    <ClInclude Include="visuals\generateTest.h" />
+    <ClInclude Include="visuals\homework.h" />
+    <ClInclude Include="visuals\myTestResults.h" />
+    <ClInclude Include="visuals\studentStatistics.h" />
     <ClInclude Include="visuals\practiceQuestions.h" />
     <ClInclude Include="visuals\title.h" />
   </ItemGroup>

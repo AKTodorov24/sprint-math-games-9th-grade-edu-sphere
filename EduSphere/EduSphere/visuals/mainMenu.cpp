@@ -3,6 +3,10 @@
 #include "title.h"
 #include "learningContent.h"
 #include "practiceQuestions.h"
+#include "homework.h"
+#include "generateTest.h"
+#include "myTestResults.h"
+#include "studentStatistics.h"
 
 static std::string sessionUsername;
 static int sessionUserID = 0;
@@ -56,12 +60,16 @@ void runApp(const std::string& username, int userID) {
             practiceQuestions();
             break;
         case MenuOption::Homework:
+            homework();
             break;
         case MenuOption::GenerateTest:
+            generateTest(username, userID);
             break;
         case MenuOption::MyTestResults:
+            myTestResults(username, userID);
             break;
         case MenuOption::Statistics:
+            studentStatistics();
             break;
         case MenuOption::Exit:
             running = false;
