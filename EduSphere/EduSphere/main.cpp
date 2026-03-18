@@ -5,10 +5,9 @@
 #include "domain/users/auth.h"
 
 int main() {
+    std::string currentUser;
     enableCenteredOutput();
     displayTitle();
-
-    std::string currentUser;
     int currentUserID = 0;
     authMenu(currentUser, currentUserID);
     runApp(currentUser, currentUserID);
