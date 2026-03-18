@@ -17,7 +17,6 @@ void myTestResults(const std::string& username, int userID) {
 
         std::vector<TestResult> all = loadResults();
 
-        // Filter to current user
         std::vector<TestResult> mine;
         for (const auto& r : all)
             if (r.userID == userID) mine.push_back(r);
@@ -33,7 +32,6 @@ void myTestResults(const std::string& username, int userID) {
             return;
         }
 
-        // Summary stats
         double total = 0.0, best = 0.0;
         int bestGrade = 0;
         for (const auto& r : mine) {

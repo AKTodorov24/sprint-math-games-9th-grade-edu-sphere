@@ -26,7 +26,6 @@ void studentStatistics() {
             return;
         }
 
-        // ── 1. Global average grade ──────────────────────────────────────
         double totalPct = 0.0;
         for (const auto& r : all) totalPct += r.scorePercent;
         double globalAvg = totalPct / all.size();
@@ -43,7 +42,6 @@ void studentStatistics() {
                   << std::fixed << std::setprecision(1) << globalAvg
                   << "%  \033[38;5;120m(Grade " << avgGrade << "/6)\033[0m\n\n";
 
-        // ── 2. Per-student best scores (leaderboard) ─────────────────────
         struct StudentBest {
             std::string username;
             double      bestPct;
@@ -62,7 +60,6 @@ void studentStatistics() {
             }
         }
 
-        // Sort descending by best score
         std::vector<std::pair<int, StudentBest>> ranked(byUser.begin(), byUser.end());
         std::sort(ranked.begin(), ranked.end(),
             [](const auto& a, const auto& b) {
@@ -81,7 +78,6 @@ void studentStatistics() {
         }
         std::cout << "\n";
 
-        // ── 3. Topic success rates ───────────────────────────────────────
         struct TopicStat { int correct = 0; int total = 0; };
         std::map<std::string, TopicStat> topics;
         for (const auto& r : all) {
@@ -92,7 +88,6 @@ void studentStatistics() {
             }
         }
 
-        // Sort by success rate ascending so worst shows first, best shows last
         std::vector<std::pair<std::string, TopicStat>> topicVec(topics.begin(), topics.end());
         std::sort(topicVec.begin(), topicVec.end(),
             [](const auto& a, const auto& b) {

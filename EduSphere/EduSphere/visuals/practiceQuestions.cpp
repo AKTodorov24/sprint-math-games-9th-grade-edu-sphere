@@ -48,7 +48,6 @@ static void runQuestion(const std::vector<Question>& questions, int startIndex) 
     int index = startIndex;
 
     while (index >= 0 && index < (int)questions.size()) {
-        // --- Show question ---
         while (true) {
             system("cls");
             displayTitle();
@@ -82,7 +81,6 @@ static void runQuestion(const std::vector<Question>& questions, int startIndex) 
 
                 bool correct = (userAnswer == q.answer);
 
-                // --- Show result ---
                 system("cls");
                 displayTitle();
                 std::cout << "\033[1m\033[38;5;208m┍━━━━━━━━━━━━━━━━━━━━━━━━━┑\033[0m" << std::endl;

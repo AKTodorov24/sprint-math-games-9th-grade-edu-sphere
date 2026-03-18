@@ -1,11 +1,5 @@
 #ifndef LIBRARIES_H
 #define LIBRARIES_H
-// All of the project's non-external libraries are stored in this file.
-
-
-// ============================
-// Standard C++ Libraries
-// ============================
 
 #include <iostream>
 #include <fstream>
@@ -54,19 +48,11 @@
 
 #include <regex>
 
-// ============================
-// Platform Specific
-// ============================
-
 #ifdef _WIN32
 #include <windows.h>
 #include <conio.h>
 #endif
 #endif
-
-// ============================
-// External Libraries
-// ============================
 
 #include "../external/json.hpp"
 using json = nlohmann::json;

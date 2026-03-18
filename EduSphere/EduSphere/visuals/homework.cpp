@@ -22,7 +22,6 @@ static const std::string lessonTitles[5] = {
 };
 
 static const HWQuestion questions[5][7] = {
-    // ── Lesson 1: Introduction to Strings ──────────────────────────────
     {{
         "What is a string in C++?",
         {"A numeric data type", "A sequence of characters for storing text",
@@ -58,7 +57,6 @@ static const HWQuestion questions[5][7] = {
         'C', true
     }},
 
-    // ── Lesson 2: Basic String Operations ──────────────────────────────
     {{
         "What does .length() return for a string?",
         {"The first character", "The last character",
@@ -90,7 +88,6 @@ static const HWQuestion questions[5][7] = {
         'B', true
     }},
 
-    // ── Lesson 3: Processing Strings with Loops ─────────────────────────
     {{
         "What does  for(int i=0; i<text.length(); i++)  iterate over?",
         {"Words in a string", "Each character by index",
@@ -128,7 +125,6 @@ static const HWQuestion questions[5][7] = {
         'B', true
     }},
 
-    // ── Lesson 4: Reading Full Lines with Strings ───────────────────────
     {{
         "What does  cin >>  stop reading at?",
         {"End of file", "A newline character",
@@ -168,7 +164,6 @@ static const HWQuestion questions[5][7] = {
         'C', true
     }},
 
-    // ── Lesson 5: Comparing Strings ─────────────────────────────────────
     {{
         "Which operator compares two strings for equality in C++?",
         {"=", "==", "!=", "<>"},
@@ -230,7 +225,6 @@ static void runHomeworkLesson(int lessonIdx) {
     for (int qi = 0; qi < 7; qi++) {
         const HWQuestion& q = questions[lessonIdx][qi];
 
-        // ── Ask question ────────────────────────────────────────────────
         while (true) {
             system("cls");
             printHeader();
@@ -265,7 +259,6 @@ static void runHomeworkLesson(int lessonIdx) {
                 bool correct = (userAnswer == q.answer);
                 bool isLast  = (qi == 6);
 
-                // ── Show result ────────────────────────────────────────
                 system("cls");
                 printHeader();
                 std::cout << "\033[1m\033[38;5;120m" << lessonTitles[lessonIdx] << "\033[0m\n\n";
@@ -304,9 +297,9 @@ static void runHomeworkLesson(int lessonIdx) {
                         std::cin.ignore((std::numeric_limits<std::streamsize>::max)(), '\n');
                         return;
                     }
-                    break; // advance to next question
+                    break;
                 }
-                return; // 0 or other = exit
+                return;
             } else {
                 std::cout << "\033[31mInvalid input! Enter A, B, C, D or 0.\033[0m" << std::endl;
                 std::this_thread::sleep_for(std::chrono::milliseconds(900));
