@@ -7,6 +7,7 @@ struct Lesson {
     std::string content;
 };
 
+// Parses and returns all lessons from the lessons file.
 static std::vector<Lesson> loadLessons() {
     std::vector<Lesson> lessons;
     std::ifstream file("visuals/lessons.txt");
@@ -40,6 +41,7 @@ static std::vector<Lesson> loadLessons() {
     return lessons;
 }
 
+// Prints text word-wrapped to maxWidth characters per line.
 static void printWrapped(const std::string& text, int maxWidth) {
     std::istringstream stream(text);
     std::string line;
@@ -64,6 +66,7 @@ static void printWrapped(const std::string& text, int maxWidth) {
     }
 }
 
+// Displays a single lesson's content and waits for the user to go back.
 static void displayLesson(const Lesson& lesson) {
     while (true) {
         system("cls");
@@ -88,6 +91,7 @@ static void displayLesson(const Lesson& lesson) {
     }
 }
 
+// Shows the lesson list and opens the selected lesson.
 void learningContent() {
     std::vector<Lesson> lessons = loadLessons();
 

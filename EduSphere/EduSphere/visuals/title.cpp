@@ -2,6 +2,7 @@
 #include "../config/libraries.h"
 #include "title.h"
 
+// Prints the EduSphere ASCII art title banner.
 void displayTitle() {
 #ifdef _WIN32
     SetConsoleOutputCP(CP_UTF8);

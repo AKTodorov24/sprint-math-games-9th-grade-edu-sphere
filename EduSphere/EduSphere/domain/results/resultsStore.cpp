@@ -4,6 +4,7 @@
 static const std::string RESULTS_DIR  = "domain/results";
 static const std::string RESULTS_FILE = "domain/results/results.json";
 
+// Loads all test results from the JSON file.
 std::vector<TestResult> loadResults() {
     std::vector<TestResult> results;
     std::ifstream file(RESULTS_FILE);
@@ -40,6 +41,7 @@ std::vector<TestResult> loadResults() {
     return results;
 }
 
+// Appends a test result to the JSON file.
 void saveResult(const TestResult& result) {
     std::filesystem::create_directories(RESULTS_DIR);
 

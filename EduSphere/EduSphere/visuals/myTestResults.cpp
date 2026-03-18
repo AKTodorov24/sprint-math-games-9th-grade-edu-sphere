@@ -3,6 +3,7 @@
 #include "title.h"
 #include "../domain/results/resultsStore.h"
 
+// Prints the "MY TEST RESULTS" section header.
 static void printResultsHeader() {
     displayTitle();
     std::cout << "\033[1m\033[38;5;208m┍━━━━━━━━━━━━━━━━━━━━━━━━━┑\033[0m" << std::endl;
@@ -10,6 +11,7 @@ static void printResultsHeader() {
     std::cout << "\033[1m\033[38;5;208m┕━━━━━━━━━━━━━━━━━━━━━━━━━┙\033[0m" << std::endl;
 }
 
+// Displays the current user's test history with scores, grades, and summary stats.
 void myTestResults(const std::string& username, int userID) {
     while (true) {
         system("cls");

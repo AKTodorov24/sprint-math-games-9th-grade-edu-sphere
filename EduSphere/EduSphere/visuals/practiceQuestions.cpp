@@ -9,6 +9,7 @@ struct Question {
     char answer;
 };
 
+// Parses and returns all practice questions from the questions file.
 static std::vector<Question> loadQuestions() {
     std::vector<Question> questions;
     std::ifstream file("visuals/practiceQuestions.txt");
@@ -44,6 +45,7 @@ static std::vector<Question> loadQuestions() {
     return questions;
 }
 
+// Runs questions sequentially starting from startIndex, showing correct answers after each.
 static void runQuestion(const std::vector<Question>& questions, int startIndex) {
     int index = startIndex;
 
@@ -125,6 +127,7 @@ static void runQuestion(const std::vector<Question>& questions, int startIndex) 
     }
 }
 
+// Shows the practice question list and starts the selected question.
 void practiceQuestions() {
     std::vector<Question> questions = loadQuestions();
 

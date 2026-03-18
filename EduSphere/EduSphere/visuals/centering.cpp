@@ -3,6 +3,7 @@
 #include <string>
 #include <windows.h>
 
+// Returns the current console window width in columns.
 static int getConsoleWidth() {
     CONSOLE_SCREEN_BUFFER_INFO csbi;
     if (GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &csbi))
@@ -10,6 +11,7 @@ static int getConsoleWidth() {
     return 80;
 }
 
+// Counts printable characters in a string, skipping ANSI escape codes and multi-byte UTF-8.
 static int visibleLength(const std::string& s) {
     int len = 0;
     bool inEscape = false;
@@ -30,6 +32,7 @@ class CenteringStreambuf : public std::streambuf {
     std::streambuf* orig;
     std::string buf;
 
+    // Flushes the buffered line to stdout padded to center it in the console.
     void outputCentered() {
         if (buf.empty()) return;
         int width = getConsoleWidth();
@@ -44,6 +47,7 @@ class CenteringStreambuf : public std::streambuf {
     }
 
 protected:
+    // Buffers each character, centering and flushing the line on newline.
     int overflow(int c) override {
         if (c == EOF) return EOF;
         if (c == '\n') {
@@ -55,21 +59,25 @@ protected:
         return c;
     }
 
+    // Writes n characters by routing each through overflow.
     std::streamsize xsputn(const char* s, std::streamsize n) override {
         for (std::streamsize i = 0; i < n; i++)
             overflow(static_cast<unsigned char>(s[i]));
         return n;
     }
 
+    // Flushes any remaining buffered text and syncs the underlying stream.
     int sync() override {
         outputCentered();
         return orig->pubsync();
     }
 
 public:
+    // Constructs the centering buffer wrapping the given original streambuf.
     CenteringStreambuf(std::streambuf* original) : orig(original) {}
 };
 
+// Replaces cout's buffer with a centering buffer so all output is auto-centered.
 void enableCenteredOutput() {
     static CenteringStreambuf centeringBuf(std::cout.rdbuf());
     std::cout.rdbuf(&centeringBuf);

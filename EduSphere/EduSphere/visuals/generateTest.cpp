@@ -12,6 +12,7 @@ struct TestQuestion {
     char        answer;
 };
 
+// Parses and returns all test questions from the questions file.
 static std::vector<TestQuestion> loadTestQuestions() {
     std::vector<TestQuestion> questions;
     std::ifstream file("visuals/testQuestions.txt");
@@ -50,6 +51,7 @@ static std::vector<TestQuestion> loadTestQuestions() {
     return questions;
 }
 
+// Converts a percentage score to a grade from 2 to 6.
 static int computeGrade(double pct) {
     if (pct >= 80.0) return 6;
     if (pct >= 70.0) return 5;
@@ -58,6 +60,7 @@ static int computeGrade(double pct) {
     return 2;
 }
 
+// Returns the current local date and time as a "YYYY-MM-DD HH:MM" string.
 static std::string currentDateTime() {
     std::time_t now = std::time(nullptr);
     struct tm ti;
@@ -67,6 +70,7 @@ static std::string currentDateTime() {
     return std::string(buf);
 }
 
+// Prints the "GENERATE TEST" section header.
 static void printTestHeader() {
     displayTitle();
     std::cout << "\033[1m\033[38;5;208m┍━━━━━━━━━━━━━━━━━━━━━━━━━┑\033[0m" << std::endl;
@@ -74,6 +78,7 @@ static void printTestHeader() {
     std::cout << "\033[1m\033[38;5;208m┕━━━━━━━━━━━━━━━━━━━━━━━━━┙\033[0m" << std::endl;
 }
 
+// Runs a randomized 30-question test, scores it, and saves the result.
 void generateTest(const std::string& username, int userID) {
     std::vector<TestQuestion> pool = loadTestQuestions();
     if (pool.empty()) {

@@ -11,6 +11,7 @@
 static std::string sessionUsername;
 static int sessionUserID = 0;
 
+// Displays the main menu and returns the user's selected option.
 MenuOption mainMenu(const std::string& username, int userID) {
     sessionUsername = username;
     sessionUserID = userID;
@@ -48,6 +49,7 @@ MenuOption mainMenu(const std::string& username, int userID) {
     }
 }
 
+// Main application loop that dispatches to each feature based on menu selection.
 void runApp(const std::string& username, int userID) {
     bool running = true;
     while (running) {

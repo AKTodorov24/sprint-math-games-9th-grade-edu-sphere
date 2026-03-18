@@ -3,6 +3,7 @@
 #include "title.h"
 #include "../domain/results/resultsStore.h"
 
+// Prints the "STUDENT STATISTICS" section header.
 static void printStatsHeader() {
     displayTitle();
     std::cout << "\033[1m\033[38;5;208m┍━━━━━━━━━━━━━━━━━━━━━━━━━┑\033[0m" << std::endl;
@@ -10,6 +11,7 @@ static void printStatsHeader() {
     std::cout << "\033[1m\033[38;5;208m┕━━━━━━━━━━━━━━━━━━━━━━━━━┙\033[0m" << std::endl;
 }
 
+// Displays global test stats, top students by best score, and per-topic success rates.
 void studentStatistics() {
     while (true) {
         system("cls");

@@ -203,6 +203,7 @@ static const HWQuestion questions[5][7] = {
     }},
 };
 
+// Returns a colored "[Viewed]" or "[Done]" tag for a lesson status.
 static std::string statusTag(LessonStatus s) {
     switch (s) {
         case LessonStatus::Viewed: return "  \033[38;5;120m[Viewed]\033[0m";
@@ -211,6 +212,7 @@ static std::string statusTag(LessonStatus s) {
     }
 }
 
+// Prints the "HOMEWORK" section header.
 static void printHeader() {
     displayTitle();
     std::cout << "\033[1m\033[38;5;208m┍━━━━━━━━━━━━━━━━━━━━━━━━━┑\033[0m" << std::endl;
@@ -218,6 +220,7 @@ static void printHeader() {
     std::cout << "\033[1m\033[38;5;208m┕━━━━━━━━━━━━━━━━━━━━━━━━━┙\033[0m" << std::endl;
 }
 
+// Walks the user through all 7 questions of a homework lesson.
 static void runHomeworkLesson(int lessonIdx) {
     if (lessonStatus[lessonIdx] != LessonStatus::Done)
         lessonStatus[lessonIdx] = LessonStatus::Viewed;
@@ -308,6 +311,7 @@ static void runHomeworkLesson(int lessonIdx) {
     }
 }
 
+// Shows the homework lesson selection menu and dispatches to the chosen lesson.
 void homework() {
     while (true) {
         system("cls");

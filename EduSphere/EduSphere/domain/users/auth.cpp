@@ -2,6 +2,7 @@
 #include "../../config/libraries.h"
 #include "../../visuals/title.h"
 
+// Returns a hex string hash of the given password.
 std::string hashPassword(const std::string& password) {
     std::hash<std::string> hasher;
     size_t hashed = hasher(password);
@@ -10,6 +11,7 @@ std::string hashPassword(const std::string& password) {
     return ss.str();
 }
 
+// Loads the accounts JSON file, returning an empty user list on failure.
 json loadAccounts() {
     std::ifstream file("accounts.json");
     if (!file.is_open()) return json{ {"users", json::array()} };
@@ -23,6 +25,7 @@ json loadAccounts() {
     return j;
 }
 
+// Writes the accounts JSON to accounts.json, overwriting existing content.
 void saveAccounts(const json& j) {
     std::ofstream file("accounts.json", std::ios::trunc);
     if (!file.is_open()) {
@@ -33,6 +36,7 @@ void saveAccounts(const json& j) {
     file.close();
 }
 
+// Prompts for a new username/password, creates the account, and logs in.
 bool registerUser(std::string& loggedUsername, int& loggedUserID) {
     displayTitle();
     json accounts = loadAccounts();
@@ -68,6 +72,7 @@ bool registerUser(std::string& loggedUsername, int& loggedUserID) {
     return true;
 }
 
+// Validates credentials and sets the logged-in user if correct.
 bool loginUser(std::string& loggedUsername, int& loggedUserID) {
     displayTitle();
     json accounts = loadAccounts();
@@ -91,6 +96,7 @@ bool loginUser(std::string& loggedUsername, int& loggedUserID) {
     return false;
 }
 
+// Loops the login/register menu until the user successfully authenticates.
 void authMenu(std::string& loggedUsername, int& loggedUserID) {
     bool logged = false;
     while (!logged) {
