@@ -85,13 +85,11 @@ void generateTest(const std::string& username, int userID) {
         return;
     }
 
-    // Shuffle and pick 30
     std::mt19937 rng(static_cast<unsigned>(std::time(nullptr)));
     std::shuffle(pool.begin(), pool.end(), rng);
     int count = (std::min)(30, (int)pool.size());
     std::vector<TestQuestion> selected(pool.begin(), pool.begin() + count);
 
-    // Overview screen
     system("cls");
     printTestHeader();
     std::cout << "\033[38;5;223mTest Overview:\033[0m\n\n";
@@ -113,7 +111,6 @@ void generateTest(const std::string& username, int userID) {
     std::cin.ignore((std::numeric_limits<std::streamsize>::max)(), '\n');
     if (choice != 1) return;
 
-    // Collect answers
     std::vector<char> userAnswers(count, ' ');
 
     for (int qi = 0; qi < count; qi++) {
@@ -123,7 +120,6 @@ void generateTest(const std::string& username, int userID) {
             system("cls");
             printTestHeader();
 
-            // Difficulty label
             std::string diffLabel;
             if      (q.difficulty == 2) diffLabel = "  \033[38;5;223m[Medium]\033[0m";
             else if (q.difficulty == 3) diffLabel = "  \033[38;5;208m[\342\230\205 Hard]\033[0m";
@@ -144,7 +140,6 @@ void generateTest(const std::string& username, int userID) {
             std::cin.ignore((std::numeric_limits<std::streamsize>::max)(), '\n');
 
             if (input == "0") {
-                // Confirm abandon
                 system("cls");
                 printTestHeader();
                 std::cout << "\033[38;5;223mAbandon the test? Progress will NOT be saved. (y/n): \033[0m";
@@ -170,7 +165,6 @@ void generateTest(const std::string& username, int userID) {
         }
     }
 
-    // Compute score
     int earned = 0, maxPossible = 0;
     std::vector<AnswerRecord> records;
     for (int i = 0; i < count; i++) {
@@ -183,7 +177,6 @@ void generateTest(const std::string& username, int userID) {
     double pct   = (maxPossible > 0) ? (double)earned / maxPossible * 100.0 : 0.0;
     int    grade = computeGrade(pct);
 
-    // Results screen
     system("cls");
     printTestHeader();
     std::cout << "\033[1m\033[38;5;120mTest Complete!\033[0m\n\n";
@@ -192,7 +185,6 @@ void generateTest(const std::string& username, int userID) {
               << " pts  (" << std::fixed << std::setprecision(1) << pct << "%)\033[0m\n";
     std::cout << "\033[38;5;223m  Grade  : \033[1m\033[38;5;120m" << grade << " / 6\033[0m\n";
 
-    // Per-question breakdown
     std::cout << "\n\033[38;5;208m  ── Question Breakdown ──────────────────────────────\033[0m\n";
     for (int i = 0; i < count; i++) {
         const TestQuestion& q = selected[i];
@@ -204,7 +196,6 @@ void generateTest(const std::string& username, int userID) {
                   << "\033[90m(correct: " << q.answer << ")\033[0m\n";
     }
 
-    // Save result
     TestResult result;
     result.userID       = userID;
     result.username     = username;
